@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "finalcheck-31f8"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "finalcheck-31f8"
+  template:
+    metadata:
+      labels:
+        app: "finalcheck-31f8"
+    spec:
+      containers:
+        - name: "finalcheck-31f8"
+          image: "newregistrycontain.azurecr.io/finalcheck"
+          ports:
+          - containerPort: 80
