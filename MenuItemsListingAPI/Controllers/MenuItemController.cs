@@ -12,7 +12,7 @@ namespace MenuItemsListingAPI.Controllers
     [Route("api/[controller]")]
     [ApiController]
 
-    [Authorize]
+    
     public class MenuItemController : ControllerBase
     {
         private static List<MenuItem> menuItems = new List<MenuItem>
